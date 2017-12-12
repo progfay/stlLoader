@@ -1,2 +1,15 @@
 # stlLoader
-load stl file and visualize triangles
+![](https://gyazo.com/5694c7bf4d2b6a02d8bccbb4705336a5.gif])
+
+ASCII形式のstlファイルを読み込み、三角形をビジュアライズしたもの。
+
+
+
+- 正規表現による三角形情報の抽出
+- 頂点データからの中心座標の割り出しとモデルの移動
+- 各三角形の拡大・収縮
+- k-means法によるモデルのクラスタリング
+
+
+
+2017年度CG基礎プレゼン課題
