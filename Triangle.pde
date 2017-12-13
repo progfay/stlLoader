@@ -39,7 +39,7 @@ class Triangle {
       this.d *= -1;
     }
     for (int i = 0; i < 3; i++) {
-      fill(this.fillColor);
+      fill(this.fillColor, 240);
       vertex(PVector.lerp(this.gravity, this.vertex[i], amt));
     }
   }

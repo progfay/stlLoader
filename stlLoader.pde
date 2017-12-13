@@ -20,9 +20,9 @@ void setup() {
   triangles = loadSTL("low_bunny.stl");
   setTrianglesGravity(triangles);
   setColorByCluster(triangles, 16);
-  barX = new SlideBar(680, 780, 600);
-  barY = new SlideBar(680, 780, 630);
-  barZ = new SlideBar(680, 780, 660);
+  barX = new SlideBar(0.10, 680, 780, 600);
+  barY = new SlideBar(0.04, 680, 780, 630);
+  barZ = new SlideBar(0.07, 680, 780, 660);
 }
 
 
@@ -36,8 +36,9 @@ void draw() {
   rotateY(radians(rotateY += barY.getValue(0, 5)));
   rotateZ(radians(rotateZ += barZ.getValue(0, 5)));
   beginShape(TRIANGLES);
+  stroke(250);
+  strokeWeight(2);
   for (Iterator i = triangles.iterator(); i.hasNext(); ) {
-    stroke(240);
     ((Triangle)(i.next())).draw();
   }
   endShape();

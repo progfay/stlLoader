@@ -5,10 +5,11 @@ class SlideBar {
   
   private boolean isPressed = false;
   
-  SlideBar(float _x1, float _x2, float _y) {
-    this.x1 = _x1;
-    this.x2 = _x2;
-    this.y  = _y;
+  SlideBar(float _amt, float _x1, float _x2, float _y) {
+    this.amt = _amt;
+    this.x1  = _x1;
+    this.x2  = _x2;
+    this.y   = _y;
   }
   
   float getValue(float low, float high) {
